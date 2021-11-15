@@ -1,0 +1,5 @@
+.p-mainvisual {
+    width: 100%;
+    height: calc(100vh - 80px);//画像を画面の高さに合わせる
+    object-fit: cover;
+}

@@ -1,0 +1,73 @@
+.p-company {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+
+    @include breakpoint( tablet ) {
+        flex-direction: column;
+        padding: 0 4%;
+        position: static;
+    }
+
+
+
+    &__white{
+        background-color: #fff;
+        padding: 12% 15% 12% 6%;
+        width: 65%;
+        height: auto;
+
+        @include breakpoint( tablet ) {
+            width: 100%;
+            padding: 12% 6%;
+        }
+
+
+        dl {
+            display: flex;
+            flex-wrap: wrap;
+
+            dt {
+                width: 20%;
+                margin-top: 10px;
+
+                @include breakpoint( tablet ) {
+                    width: 100%;
+                    margin-top: 25px;
+                }        
+            }
+
+            dd {
+                width: 80%;
+                margin-top: 10px;
+
+                @include breakpoint( tablet ) {
+                    width: 100%;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                }        
+            }
+
+            @include breakpoint( tablet ) {
+                flex-direction: column;
+            }    
+        }
+    }
+
+    &__img{
+        width: 540px;
+        height: 400px;
+        object-fit: cover;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+
+        @include breakpoint( tablet ) {
+            flex-direction: column;
+            width: 100%;
+            position: static;
+            margin-top: 20px;
+        }
+    }
+}

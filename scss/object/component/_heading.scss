@@ -1,0 +1,14 @@
+.c-heading {
+    &__eng{
+        letter-spacing: 0.3em;
+        margin-bottom: 10px;
+    }
+
+    &__line {
+        background-color: #b4b4b4;
+        width: 40px;
+        height: 2px;
+        border-radius: 10px;
+        margin: 35px 0 50px;
+    }
+}

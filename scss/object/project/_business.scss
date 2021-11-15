@@ -1,0 +1,24 @@
+.p-business {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+    &__img {
+        display: flex;
+        justify-content: flex-end;
+
+        &--left {
+            margin-right: 65px;
+            margin-top: 100px;
+
+            @include breakpoint( tablet ) {
+                margin-top: 0;
+                margin-right: 0;
+            }
+        }
+
+        @include breakpoint( tablet ) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.p-header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding-left: 60px;
+
+    @include breakpoint( tablet ) {
+        flex-direction: column;
+        padding: 15px 0;
+        align-items: flex-start;
+    }
+
+    &__logo {
+        line-height: 1px;
+        
+        img {
+            height: 25px;
+            width: 100px;
+            margin: 0 45px;
+            
+            @include breakpoint( tablet ) {
+                height: 20px;
+                width: 80px;
+                margin: 0 15px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        li {
+            padding: 0 15px;
+        }
+    }
+}

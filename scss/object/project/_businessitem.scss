@@ -1,0 +1,20 @@
+.p-businessitem {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-weight: normal;
+        margin-right: 10px;
+    }
+    
+    img {
+        width: 368px;
+        height: 232px;
+        margin: 15px 0 50px;
+
+        @include breakpoint( tablet ) {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

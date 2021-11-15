@@ -1,0 +1,27 @@
+.p-about {
+    display: flex;
+    
+    @include breakpoint( tablet ) {
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 55%;
+        height: 400px;
+        object-fit: cover;
+
+        @include breakpoint( tablet ) {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        padding-top: 12rem;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        @include breakpoint( tablet ) {
+            padding-top: 4%
+        }
+    }
+}

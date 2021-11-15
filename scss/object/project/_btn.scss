@@ -1,0 +1,17 @@
+.p-btn {
+    text-align: center;
+    line-height: 80px;
+
+    a {
+        background-color: black;
+        display: block;
+        color: #fff;
+        padding: auto;
+        height: 100%;
+        width: 200px;
+    }
+
+    @include breakpoint( tablet ) {
+        display: none;
+    }
+}

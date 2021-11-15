@@ -1,0 +1,18 @@
+.p-news {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+    &__list {
+        display: flex;
+
+        @include breakpoint( tablet ) {
+            flex-direction: column;
+        }
+
+        :first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+    }
+}
